@@ -1,28 +1,17 @@
 package br.com.fiap.banco;
 
-import br.com.fiap.banco.Conta;
-
 public class Teste {
     public static void main(String[] args) {
-        String nome;
-
         Conta cc = new Conta();
-        cc.saldo = 50.0;
-        cc.agencia = 123;
-        cc.numero = 321;
+        cc.depositar(50);
+        cc.setAgencia(123);
+        cc.setNumero(321);
 
         cc.depositar(1000);
-        System.out.println(cc.verificarSaldo());
+        System.out.println(cc.getSaldo());
 
         Conta poupanca = new Conta(111, 222, 1000);
         poupanca.retirar(50);
-        System.out.println(poupanca.verificarSaldo());
-
-        Conta cc2 = null;
-
-        if (cc2 != null) {
-            cc2.depositar(1000);
-        }
-        System.out.println(cc2);
+        System.out.println(poupanca.getSaldo());
     }
 }
