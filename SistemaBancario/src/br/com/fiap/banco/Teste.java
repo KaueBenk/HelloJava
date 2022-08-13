@@ -1,5 +1,7 @@
 package br.com.fiap.banco;
 
+import br.com.fiap.banco.Conta;
+
 public class Teste {
     public static void main(String[] args) {
         Conta cc = new Conta();
