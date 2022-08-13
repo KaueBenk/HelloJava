@@ -4,6 +4,8 @@ import br.com.fiap.banco.Conta;
 
 public class Teste {
     public static void main(String[] args) {
+        String nome;
+
         Conta cc = new Conta();
         cc.saldo = 50.0;
         cc.agencia = 123;
